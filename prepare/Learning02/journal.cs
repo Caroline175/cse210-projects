@@ -7,7 +7,7 @@ public List<Entry> entries;
 
 public Journal()
 {
-    entries = new List<Entry>();
+    
 }
 
 public Journal(string import)
