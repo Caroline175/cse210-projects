@@ -32,10 +32,10 @@ class Program
                     activity.PerformActivity();
                     break;
                 case "4":
-                    Console.WriteLine("Goodbye!");
+                    Console.WriteLine("Thank you!");
                     return;
                 default:
-                    Console.WriteLine("Invalid choice. Please enter a valid option (1-4).");
+                    Console.WriteLine("Please pick 1-4");
                     break;
             }
         }

@@ -3,14 +3,14 @@ using System;
 class ListingActivity : Activity
 {
     private string[] listingPrompts = {
-        "Who are people that you appreciate?",
-        "What are personal strengths of yours?",
+        "Who are your role models?",
+        "Where are places you would like to travel to?",
         "Who are people that you have helped this week?",
         "When have you felt the Holy Ghost this month?",
-        "Who are some of your personal heroes?"
+        "What attributes would you like to develop?"
     };
 
-    public ListingActivity() : base("Listing", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.")
+    public ListingActivity() : base("Listing", "List as many things as you can to reflect on the good.")
     {
     }
 
@@ -21,7 +21,7 @@ class ListingActivity : Activity
         Random random = new Random();
         string prompt = listingPrompts[random.Next(listingPrompts.Length)];
         Console.WriteLine(prompt);
-        Console.WriteLine("You have several seconds to think about the prompt and list as many items as you can.");
+        Console.WriteLine("Think of as many items as you can!.");
 
         PauseWithSpinner(Duration);
 

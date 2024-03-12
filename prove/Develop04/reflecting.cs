@@ -3,9 +3,9 @@ using System;
 class ReflectionActivity : Activity
 {
     private string[] reflectionPrompts = {
-        "Who is your role model and why?.",
+        "Think of a time you overcame something difficult.",
         "Think of a time when you felt hope.",
-        "Where do you see yourself in five years?",
+        "Think of a time you felt loved",
         "Think of an event that shaped who you are.",
         "Think of a time when a small choice changed your life."
     };
@@ -13,7 +13,6 @@ class ReflectionActivity : Activity
     private string[] reflectionQuestions = {
         "Why was this experience meaningful to you?",
         "Have you ever done anything like this before?",
-        "How did you get started?",
         "How did you feel when it was complete?",
         "What made this time different than other times when you were not as successful?",
         "What is your favorite thing about this experience?",
@@ -22,7 +21,7 @@ class ReflectionActivity : Activity
         "How can you keep this experience in mind in the future?"
     };
 
-    public ReflectionActivity() : base("Reflection", "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.")
+    public ReflectionActivity() : base("Reflection", "This activity will help you reflect and process parts of your life.")
     {
     }
 

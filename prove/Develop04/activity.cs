@@ -23,8 +23,7 @@ abstract class Activity
 
     public void EndActivity()
     {
-        Console.WriteLine($"Congratulations! You've done a great job with {Name}.");
-        Console.WriteLine($"You completed {Name} Activity for {Duration} seconds.");
+        Console.WriteLine($"Well done! You completed {Name} Activity!");
         PauseWithSpinner(3);
     }
 
