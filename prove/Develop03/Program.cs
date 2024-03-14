@@ -1,9 +1,13 @@
 using System;
 
-class Program
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello Develop03 World!");
+        static void Main(string[] args)
+        {
+            var program = new ProgramLogic();
+            program.Run();
+        }
     }
 }
+
