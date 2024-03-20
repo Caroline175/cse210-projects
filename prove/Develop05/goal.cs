@@ -1,19 +1,24 @@
+using System;
+
+abstract class Goal
 {
-    public string Name 
-    public int Value 
-    public bool Completed 
+    public string Name { get; set; }
+    public bool Completed { get; protected set; }
 
-    public abstract void Display();
-
-    public Goal(string name, int value)
+    public Goal(string name)
     {
         Name = name;
-        Value = value;
         Completed = false;
     }
 
-    public virtual void RecordEvent()
+    public virtual int RecordEvent()
     {
-        Completed = true;
+        return 0;
+    }
+
+    public virtual string DisplayStatus()
+    {
+        string status = Completed ? "[X]" : "[ ]";
+        return $"{status} {Name}";
     }
 }
